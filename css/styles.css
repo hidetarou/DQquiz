@@ -1,105 +1,22 @@
-body {
-  background: #efdec1;
-  font-size: 14px;
-  font-family: Verdana, sans-serif;
-}
-
-.container {
-  width: 400px;
-  margin: 8px auto;
-  background:#fff;
-  border-radius: 4px;
-  padding: 16px;
-  position: relative;
-}
-
-#question {
-margin-bottom: 16px;
-font-weight: bold;
-}
-
-#choices{
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-#choices > li {
-border: 1px solid #ccc;
-border-radius: 4px;
-padding: 10px;
-margin-bottom: 10px;
-cursor: pointer;
-user-select: none;
-}
-
-#choices > li:hover {
-  background: #f8f8f8;
-}
-
-#button, #result > a{
-  background: #3498db;
-  padding: 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
-  color: #fff;
-  box-shadow: 0 4px 0 #2880b9;
+h1, #target, #result {
   user-select: none;
 }
-
-#button.disabled{
-  background: #ccc;
-  box-shadow: 0 4px 0 #bbb;
-  opacity: 0.7;
-}
-
-#choices > li.correct {
-  background: #d4edda;
-  border-color: #c3e6cb;
-  color: #155724;
-  font-weight: bold;
-}
-#choices > li.correct::after{
-  content: '...正解!';
-}
-
-#choices > li.wrong {
-  background: #f8d8da;
-  border-color: #f5c6cd;
-  color: #721c24;
-  font-weight: bold;
-}
-
-#choices > li.wrong::after{
-  content: '...不正解!';
-}
-
-#result{
-  position: absolute;
-  width: 300px;
-  background: #fff;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  top: 50px;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  border-radius: 4px;
+body {
+  padding-top: 40px;
+  font-family: 'Courier New', monospace;
   text-align: center;
-  transition: transform 0.4s;
+  background-color:skyblue;
+}
+h1{
+color: red;
 }
 
-#result > p {
-  font-size: 24px;
+#target {
+  font-size: 48px;
+  letter-spacing: .1em;
+  cursor: pointer;
 }
 
-#result > a{
-  display: block;
-  text-decoration: none;
+#result {
+  font-size: 36px;
 }
-
-#result.hidden{
-  transform: translateY(-500px);
-}
-
