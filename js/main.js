@@ -23,6 +23,8 @@
   let currentNum = 0;
   let isAnswered;
   let score = 0;
+  const correctAnswer = new Audio('../sound/クイズ正解1.mp3');
+  const wrongAnswer = new Audio('../sound/クイズ不正解1.mp3');
   
   function checkAnswer(li) {
     if(isAnswered){
@@ -31,9 +33,11 @@
     isAnswered = true;
     if(li.textContent === quizSet[currentNum].c[0]){
       li.classList.add('correct');
+      correctAnswer.play();
       score++;
     }else{
       li.classList.add('wrong');
+      wrongAnswer.play();
     };
     button.classList.remove('disabled');
   }
