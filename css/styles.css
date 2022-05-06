@@ -5,13 +5,14 @@ body {
 }
 
 .container {
-  width: 25%;
+  width: 70%;
   margin: 8px auto;
   background:#fff;
   border-radius: 4px;
   padding: 16px;
   margin-top:10%;
   position: relative;
+  max-width: 400px;
 }
 
 #question {
